@@ -4,6 +4,9 @@ $show-home-image: true;
 $home-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg");
 $background-opacity: 0.9;
 
+// below based on nav elements in menu
+$num-nav-links: 4;
+
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
