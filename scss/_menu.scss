@@ -16,4 +16,26 @@
         background: #fff;
         @include easeOut;
     }
+
+    // rotate triple menu lines into X 
+     
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+            // use pseudoselector to rotate line 1, hide line 2, rotate line 3
+            &:nth-child(1){
+                background: red;
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+
+            &:nth-child(3){
+                background: red;
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+    }
 }
