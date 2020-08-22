@@ -34,6 +34,16 @@ $num-nav-links: 4;
     }
 }
 
+// set text color based on background color
+@function set-text-color($color){
+    @if(lightness($color) > 40 ){
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
 
 // mixins for different media, screen sizes 
 
